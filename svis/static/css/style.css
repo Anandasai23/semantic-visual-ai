@@ -1,0 +1,240 @@
+/* ================================================================
+   Semantic Visual Intelligence System — Custom Stylesheet
+   ================================================================ */
+
+/* ----- Fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+/* ----- Base ----- */
+html, body, [class*="css"] {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* ----- App Header ----- */
+.app-header {
+    padding: 1.5rem 0 1rem;
+    border-bottom: 2px solid #e8e4dc;
+    margin-bottom: 1.5rem;
+}
+
+.app-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #0f0e0c;
+    margin-bottom: .4rem;
+}
+
+.app-subtitle {
+    font-size: 0.9rem;
+    color: #7a776e;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.04em;
+}
+
+/* ----- Sidebar ----- */
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: .5rem 0;
+}
+
+.brand-icon { font-size: 1.8rem; }
+
+.brand-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #0f0e0c;
+}
+
+/* ----- Section Headers ----- */
+.section-header {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #0f0e0c;
+    margin: 1rem 0 .75rem;
+}
+
+.subsection-header {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2a2822;
+    margin: 1.2rem 0 .6rem;
+}
+
+/* ----- Tip Box ----- */
+.tip-box {
+    background: #f7f5f0;
+    border: 1px solid #e0dbd2;
+    border-left: 4px solid #c8600a;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #5c5a54;
+    line-height: 1.6;
+}
+
+/* ----- Caption ----- */
+.caption-box {
+    background: #f0f7ff;
+    border: 1px solid #bdd6f0;
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.caption-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #1a5f8a;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+.caption-text {
+    font-size: 1.05rem;
+    color: #0d3a58;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.refined-box {
+    background: #f0faf5;
+    border: 1px solid #a0d8b8;
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.97rem;
+    color: #1a4a29;
+    line-height: 1.75;
+}
+
+.meta-box {
+    background: #f7f5f0;
+    border: 1px solid #e0dbd2;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    font-size: 0.82rem;
+    color: #5c5a54;
+    line-height: 1.6;
+}
+
+.meta-value {
+    color: #0f0e0c;
+    font-weight: 500;
+}
+
+/* ----- Chat ----- */
+.chat-msg {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.chat-msg.user-msg {
+    flex-direction: row-reverse;
+}
+
+.chat-avatar {
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 4px 7px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    margin-top: 4px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .05em;
+}
+
+.user-avatar {
+    background: #ddeeff;
+    color: #0a3a60;
+}
+
+.ai-avatar {
+    background: #dcf0e4;
+    color: #0f3a20;
+}
+
+.chat-bubble {
+    max-width: 82%;
+    padding: .65rem 1rem;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    border: 1px solid #e8e4dc;
+    background: #ffffff;
+    color: #0f0e0c;
+}
+
+.user-bubble {
+    background: #e8f1fa;
+    border-color: #9dc0e0;
+    color: #0d3a58;
+}
+
+.ai-bubble {
+    background: #f0faf5;
+    border-color: #a0d8b8;
+    color: #1a3a28;
+}
+
+/* ----- Landing Placeholder ----- */
+.landing-placeholder {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #a8a49c;
+}
+
+.placeholder-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.landing-placeholder h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #5c5a54;
+    margin-bottom: .5rem;
+}
+
+.landing-placeholder p {
+    font-size: .95rem;
+    color: #a8a49c;
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ----- Streamlit overrides ----- */
+.stButton > button {
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 0.88rem;
+}
+
+.stTextInput > div > div > input {
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.stFileUploader > div {
+    border-radius: 10px;
+}
+
+.stSelectbox > div > div {
+    border-radius: 8px;
+}
+
+div[data-testid="metric-container"] {
+    background: #f7f5f0;
+    border: 1px solid #e0dbd2;
+    border-radius: 10px;
+    padding: 12px 16px;
+}
